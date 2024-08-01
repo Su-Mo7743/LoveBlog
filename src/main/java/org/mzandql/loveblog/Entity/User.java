@@ -14,8 +14,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 
 public class User {
-    @jakarta.persistence.Id
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private String name =
+    private Long id;
+    private String username;
+    private String password;
+    private String email;
+    private Integer phoneNumber;
 }
